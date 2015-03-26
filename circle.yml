@@ -1,7 +1,6 @@
-
 deployment:
   staging:
     branch: master
     commands:
-    	- git push git@heroku.com:ionutapplication.git $CIRCLE_SHA1:refs/heads/master
-    	- heroku run rake db:migrate --app ionutapplication
+      - git push git@heroku.com:ionutapplication.git $CIRCLE_SHA1:refs/heads/master
+      - heroku run rake db:migrate --app ionutapplication
